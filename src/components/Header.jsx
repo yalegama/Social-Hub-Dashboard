@@ -1,5 +1,6 @@
-import { AppBar, Avatar, Badge, Toolbar } from '@material-ui/core'
-import { Email, Notifications, SettingsInputComponentRounded } from '@material-ui/icons';
+import { AppBar, Avatar, Badge, InputBase, Toolbar } from '@material-ui/core'
+import { Email, Notifications, Search, SettingsInputComponentRounded } from '@material-ui/icons';
+
 import { makeStyles } from '@material-ui/styles'
 import React from 'react'
 
@@ -12,7 +13,7 @@ tabBar:{
     justifyContent:'space-between'
 },
 logoText:{
-    color:'darkblue',
+    color:'#00008B',
     fontWeight:'bold',
     marginLeft:100,
 },
@@ -20,7 +21,7 @@ logoTextLink:{
     textDecoration:'none'
 },
 menuIcons:{
-    color:'blue',
+    color:'	#4169E1',
     cursor:'pointer',
     display:'flex',
     alignItems:'center',
@@ -28,6 +29,26 @@ menuIcons:{
 },
 icons:{
     marginLeft:30
+},
+searchContainer:{
+    display:'flex',
+    alignItems:'center',
+    backgroundColor:'#b2beb5',
+    height:35,
+    borderRadius:10,
+    width:800,
+    
+    
+},
+inputBase:{
+    color:'black',
+    width:"100%"
+},
+searchIcon:{
+    color:'blue',
+    cursor:'pointer',
+    marginLeft:20,
+
 }
 }))
 
@@ -40,6 +61,12 @@ function Header() {
                     <a className={classes.logoTextLink} href="">
                     Social Hub <br/>Dashboard
                     </a>
+                </div>
+                <div>
+                    <div className={classes.searchContainer}>
+                        <Search className={classes.searchIcon}/>
+                        <InputBase className={classes.inputBase}></InputBase>
+                    </div>
                 </div>
                 <div className={classes.menuIcons}>
                     <div className={classes.menuIcons}>

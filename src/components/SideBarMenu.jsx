@@ -1,4 +1,5 @@
-import { ChatSharp, Home, Timeline } from '@material-ui/icons';
+import { colors } from '@material-ui/core';
+import { AddShoppingCart, AttachMoney, ChatBubbleRounded, ChatSharp, FeedbackOutlined, Home, Mail, Message, Person, Timeline } from '@material-ui/icons';
 import { makeStyles } from '@material-ui/styles'
 import React from 'react'
 
@@ -30,7 +31,7 @@ function SideBarMenu() {
         <div className={classes.sideBarContainer}>
             <div className={classes.wrapSidebar}>
                 <div className={classes.sideBarItemContainer}>
-                    <h3>Dashboard</h3>
+                    <h3 style={{color:'#696969'}}>Dashboard</h3>
                     <div className={classes.itemContainer}>
                         <Home className={classes.icon} />
                         Home
@@ -45,48 +46,52 @@ function SideBarMenu() {
                     </div>
                 </div>
                 <div className={classes.sideBarItemContainer}>
-                    <h3>Quick Sale</h3>
+                    <h3 style={{color:'#696969'}}>Quick Sale</h3>
                     <div className={classes.itemContainer}>
-                        <Home className={classes.icon}/>
-                        Home
+                        <Person className={classes.icon}/>
+                        Users
                     </div>
                     <div className={classes.itemContainer}>
-                        <ChatSharp className={classes.icon}/>
-                        Messages
+                        <AddShoppingCart className={classes.icon}/>
+                        Product
                     </div>
                     <div className={classes.itemContainer}>
-                        <Timeline className={classes.icon}/>
-                        Analytic
-                    </div>
-                </div>
-                <div className={classes.sideBarItemContainer}>
-                    <h3>Dashboard</h3>
-                    <div className={classes.itemContainer}>
-                        <Home className={classes.icon}/>
-                        Home
+                        <AttachMoney className={classes.icon}/>
+                        Transaction
                     </div>
                     <div className={classes.itemContainer}>
-                        <ChatSharp className={classes.icon}/>
-                        Messages
-                    </div>
-                    <div className={classes.itemContainer}>
-                        <Timeline className={classes.icon}/>
-                        Analytic
+                        <ChatBubbleRounded className={classes.icon}/>
+                        Repots
                     </div>
                 </div>
                 <div className={classes.sideBarItemContainer}>
-                    <h3>Dashboard</h3>
+                    <h3 style={{color:'#696969'}}>Notification</h3>
                     <div className={classes.itemContainer}>
-                        <Home className={classes.icon}/>
-                        Home
+                        <Mail className={classes.icon}/>
+                        Mail
+                    </div>
+                    <div className={classes.itemContainer}>
+                        <FeedbackOutlined className={classes.icon}/>
+                        Feedback
+                    </div>
+                    <div className={classes.itemContainer}>
+                        <Message className={classes.icon}/>
+                        Messages
+                    </div>
+                </div>
+                <div className={classes.sideBarItemContainer}>
+                    <h3 style={{color:'#696969'}}>Staff</h3>
+                    <div className={classes.itemContainer}>
+                        <Message className={classes.icon}/>
+                        Manage
                     </div>
                     <div className={classes.itemContainer}>
                         <ChatSharp className={classes.icon}/>
-                        Messages
+                        Analytics
                     </div>
                     <div className={classes.itemContainer}>
                         <Timeline className={classes.icon}/>
-                        Analytic
+                        Reports
                     </div>
                 </div>
             </div>
