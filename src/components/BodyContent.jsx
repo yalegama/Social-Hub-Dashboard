@@ -14,8 +14,9 @@ function BodyContent() {
     return (
         <div>
             <Grid container>
-                <Grid item md={4}><HomePage/></Grid>
-                <Grid item md={8}><SideBarMenu/></Grid>
+                
+                <Grid item md={2} xs={2}><SideBarMenu/></Grid>
+                <Grid item md={10} xs={10}><HomePage/></Grid>
             </Grid>
         </div>
     )
