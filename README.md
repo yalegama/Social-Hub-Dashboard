@@ -1,3 +1,5 @@
+<img src="src/images/screen.png">
+
 # Getting Started with Create React App
 
 ### `npx create-react-app socialhub-dashboard`
@@ -11,3 +13,5 @@
 ### `npm install @material-ui/icons`
 
 ### `npm install @material-ui/styles`
+
+### `npm install recharts`

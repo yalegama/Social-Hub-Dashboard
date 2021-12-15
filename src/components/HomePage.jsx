@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core'
 import React from 'react'
 import CardSection from './CardSection';
+import Chart from './Chart';
 
 const useStyles=makeStyles((theme)=>({
 
@@ -12,6 +13,7 @@ function HomePage() {
         <div className={classes.homePageContainer}>
             <div>
                 <CardSection/>
+                <Chart/>
             </div>
         </div>
     )
